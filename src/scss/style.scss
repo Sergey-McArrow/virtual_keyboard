@@ -1,0 +1,23 @@
+@import "mixins.scss";
+
+// body {
+//   background: black;
+// }
+#keyboard {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  justify-content: space-evenly;
+}
+.key {
+  width: 4.5%;
+  height: 50px;
+  border: 1px solid black;
+}
+.backspace {
+  flex-grow: 0.5;
+}
+.space {
+  flex-grow: 2;
+}
