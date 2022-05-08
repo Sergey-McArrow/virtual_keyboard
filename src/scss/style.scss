@@ -28,7 +28,7 @@ body {
   width: 95%;
   bottom: 0;
   gap: 7px;
-  border: 1px solid red;
+  background: #888888;
   justify-content: space-evenly;
   display: flex;
   flex-direction: column;
@@ -44,13 +44,21 @@ body {
   justify-content: center;
   width: 6.5%;
   height: 50px;
-  border: 1px solid black;
+  // border: 1px solid black;
+  border-radius: 5%;
   color: $color-char;
   background-color: $background-color-keys-primary;
+  &:hover {
+    background: $background-hover-color;
+  }
 }
 .special {
   flex-grow: 0.5;
+  background: $background-color-keys-secondary;
 }
 #Space {
   flex-grow: 20;
+}
+.active {
+  background: $background-hover-color;
 }
