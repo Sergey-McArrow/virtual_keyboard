@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./keyboard */ \"./src/keyboard.js\");\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_keyboard__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst head = window.document.querySelector(\"head\");\n\nfunction includeCSS() {\n  const style = window.document.createElement(\"link\");\n  style.href = \"/dist/style.css\";\n  style.rel = \"stylesheet\";\n  head.append(style);\n}\nincludeCSS();\n\n\n//# sourceURL=webpack://virtual_keyboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./keyboard */ \"./src/keyboard.js\");\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_keyboard__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst head = window.document.querySelector(\"head\");\n\nfunction includeCSS() {\n  const style = window.document.createElement(\"link\");\n  style.href = \"/dist/style.css\";\n  style.rel = \"stylesheet\";\n  head.append(style);\n}\n\nwindow.onload = () => {\n  includeCSS();\n};\n\n\n//# sourceURL=webpack://virtual_keyboard/./src/index.js?");
 
 /***/ }),
 
