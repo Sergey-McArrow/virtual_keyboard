@@ -10,4 +10,7 @@ function includeCSS() {
   style.rel = "stylesheet";
   head.append(style);
 }
-includeCSS();
+
+window.onload = () => {
+  includeCSS();
+};

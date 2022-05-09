@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/KeysObj.js":
+/*!************************!*\
+  !*** ./src/KeysObj.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"buttons\": () => (/* binding */ buttons)\n/* harmony export */ });\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./keyboard */ \"./src/keyboard.js\");\n\r\nlet buttons = [];\r\nfor (let i = 0; i < _keyboard__WEBPACK_IMPORTED_MODULE_0__.keys.length; i++) {\r\n  let KeysObj = {\r\n    key: _keyboard__WEBPACK_IMPORTED_MODULE_0__.keys2[i],\r\n    keyCode: _keyboard__WEBPACK_IMPORTED_MODULE_0__.keys[i],\r\n  };\r\n  buttons.push(KeysObj);\r\n}\r\n\n\n//# sourceURL=webpack://virtual_keyboard/./src/KeysObj.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./keyboard */ \"./src/keyboard.js\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './KeysObj'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\n\r\n// import \"./scss/style.scss\";\r\n\r\nconst head = window.document.querySelector(\"head\");\r\n\r\nfunction includeCSS() {\r\n  const style = window.document.createElement(\"link\");\r\n  style.href = \"/dist/style.css\";\r\n  style.rel = \"stylesheet\";\r\n  head.append(style);\r\n}\r\nincludeCSS();\r\n\n\n//# sourceURL=webpack://virtual_keyboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _keyboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./keyboard */ \"./src/keyboard.js\");\n/* harmony import */ var _KeysObj__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./KeysObj */ \"./src/KeysObj.js\");\n\r\n\r\n// import \"./scss/style.scss\";\r\n\r\nconst head = window.document.querySelector(\"head\");\r\n\r\nfunction includeCSS() {\r\n  const style = window.document.createElement(\"link\");\r\n  style.href = \"/dist/style.css\";\r\n  style.rel = \"stylesheet\";\r\n  head.append(style);\r\n}\r\n\r\nwindow.onload = () => {\r\n  includeCSS();\r\n};\r\n\n\n//# sourceURL=webpack://virtual_keyboard/./src/index.js?");
 
 /***/ }),
 
