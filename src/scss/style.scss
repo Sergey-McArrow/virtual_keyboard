@@ -1,5 +1,4 @@
 @import "_base.scss";
-@import "_mixins.scss";
 
 body {
   margin: 0 auto;
@@ -22,6 +21,10 @@ body {
     color: #444444;
   }
 }
+.text {
+  position: absolute;
+  left: 5%;
+}
 
 #keyboard {
   position: fixed;
@@ -32,6 +35,8 @@ body {
   justify-content: space-evenly;
   display: flex;
   flex-direction: column;
+  padding: 0.7%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 .line {
   display: flex;
@@ -58,7 +63,19 @@ body {
 }
 #Space {
   flex-grow: 20;
+  color: $background-color-keys-secondary;
+  &:hover {
+    color: $background-hover-color;
+  }
 }
 .active {
   background: $background-hover-color;
+}
+.arrow {
+  width: 10%;
+  background: lighten($background-color-keys-secondary, 25%);
+  color: lighten($color-char, 25%);
+}
+#CapsLock {
+  width: 0%;
 }

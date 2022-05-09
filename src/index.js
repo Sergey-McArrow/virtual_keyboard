@@ -1,4 +1,6 @@
 import { keyboard } from "./keyboard";
+import { KeysObj } from "./KeysObj";
+// import "./scss/style.scss";
 
 const head = window.document.querySelector("head");
 
