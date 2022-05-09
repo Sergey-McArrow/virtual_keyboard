@@ -20,6 +20,11 @@ body {
   color: #444444;
 }
 
+.text {
+  position: absolute;
+  left: 5%;
+}
+
 #keyboard {
   position: fixed;
   width: 95%;
@@ -29,6 +34,8 @@ body {
   justify-content: space-evenly;
   display: flex;
   flex-direction: column;
+  padding: 0.7%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 .line {
@@ -58,10 +65,24 @@ body {
 
 #Space {
   flex-grow: 20;
+  color: #222222;
+}
+#Space:hover {
+  color: #79aa89;
 }
 
 .active {
   background: #79aa89;
+}
+
+.arrow {
+  width: 10%;
+  background: #626262;
+  color: white;
+}
+
+#CapsLock {
+  width: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
