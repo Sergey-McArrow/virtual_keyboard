@@ -1,6 +1,0 @@
-node_modules
-/.vscode
-/.git
-/dist/main.js
-webpack.config.js
-
